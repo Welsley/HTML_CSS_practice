@@ -15,10 +15,15 @@ h1 {
 
 table {
     margin: 0px auto;
-    border-collapse: separate;
-    border: 3px solid rgba(200, 200, 200, 1);
+    border-collapse: collapse;
+    border: 3px solid rgba(255, 255, 255, 0.8);
     width: 75%;
     background-color: rgba(0, 0, 0, 0.0);
+}
+
+th {
+    font-weight: bold;
+    text-align: center;
 }
 
 td {
@@ -27,12 +32,11 @@ td {
     font-weight: normal;
 }
 
-th {
-    font-weight: bold;
-    text-align: center;
+th, td {
+    border: 1px solid rgba(180, 180, 180, 0.7);
 }
 
-th, td{
+tbody{
   background-color: rgba(255, 255, 255, 0.0);
 }
 
@@ -41,19 +45,20 @@ tbody tr:nth-of-type(even) th, tbody tr:nth-of-type(even) td {
 }
 
 .property {
-    text-align: center;
     min-width: 150px;
-    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .description {
-    text-align: center;
     min-width: 400px;
+}
+
+thead {
+    text-align: center;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
 .code {
     font-family: 'Lucida Console', Courier, monospace;
-    background-color: rgba(80, 80, 80, 0.85);
+    background-color: rgba(15, 15, 15, 0.9);
     font-weight: normal;
 }
